@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-menu">
+        <h1 class="home-heading">Welcome!</h1>
+        <button class="fas fa-cog settings-btn"></button>
+        <button class="far fa-play-circle play-btn"></button>
+    </div>
+    <div class="settings-menu hidden">
+        <h1>Settings</h1>
+        <label for=".movementSpeed">Movement Speed</label>
+        <input class="settings-input movementSpeed" value="3" type="number">
+        <br>
+        <label for=".startingHealth">Starting Health</label>
+        <input class="settings-input startingHealth" value="10" type="number">
+        <br>
+        <label for=".bulletSpeed">Bullet Speed</label>
+        <input class="settings-input bulletSpeed" value="10" type="number">
+        <br>
+        <label for=".reloadSpeed">Reload Speed</label>
+        <input class="settings-input reloadSpeed" value="700" type="number">
+        <button class="fas fa-check save-btn"></button>
+    </div>
+    <!-- HUD Elements -->
+    <div class="blue-health-border health-bar">
+        <div class="good-health health-bar"></div>
+    </div>
+    <div class="reload-box blue-reload-box"></div>
+
+
+    <div class="reload-box red-reload-box"></div>
+    <div class="red-health-border health-bar">
+        <div class="bad-health health-bar"></div>
+    </div>
+    <!-- Good robot -->
+    <div class="robot-body good-robot">
+        <div class="robot-head good-bot-head"></div>
+    </div>
+    <!-- Bad robot -->
+    <div class="robot-body bad-robot">
+        <div class="robot-head bad-bot-head"></div>
+    </div>
+
+    <!-- play area -->
+    <div class="bar bar-left"></div>
+    <img src="background.jpeg" alt=" " class="back-photo">
+    <div class="bar bar-right"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/8d652c0b44.js" crossorigin="anonymous"></script>
+</body>
+</html>
